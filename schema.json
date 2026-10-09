@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sacaita Montgomery",
+  "alternateName": "Sacaita M.",
+  "url": "https://sacaitamanuelinacio.netlify.app/",
+  "image": "https://sacaitamanuelinacio.netlify.app/preview.jpg",
+  "jobTitle": "Enfermeiro Generalista",
+  "description": "Sacaita Montgomery é enfermeiro generalista em Moçambique. Especializado em cuidados de saúde, com experiência profissional documentada em portfólio.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Beira",
+    "addressCountry": "MZ"
+  },
+  "telephone": "+258842372438",
+  "email": "sacaitamo@gmail.com",
+  "sameAs": [
+    "https://facebook.com/sacaitamo",
+    "https://instagram.com/sacaitamo",
+    "https://linkedin.com/in/sacaitami",
+    "https://youtube.com/@sacaitamontgomery"
+  ],
+  "knowsAbout": [
+    "Enfermagem",
+    "Cuidados de Saúde",
+    "Saúde Pública",
+    "Moçambique"
+  ]
+}

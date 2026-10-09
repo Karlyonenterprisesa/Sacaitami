@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serviços | Sacaita Montgomery</title>
+<meta name="description" content="Solicite serviços de saúde, tecnologia e marketing: testes rápidos, cuidados domiciliários, sites, design gráfico e gestão de redes sociais.">
+<link rel="canonical" href="https://sacaitamanuelinacio.netlify.app/servicos.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta name="theme-color" content="#011638">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+.hero-image{
+width:100%;
+height:370px;
+overflow:hidden;
+}
+.hero-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat', sans-serif;
+}
+
+body{
+background:#f3f4f6;
+color:#111827;
+}
+
+/* HERO */
+.hero{
+background: linear-gradient(120deg,#0b1c3d 50%, #f3f4f6 50%);
+padding:90px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:44px;
+color:#fff;
+font-weight:800;
+}
+
+.hero span{
+color:#e60023;
+}
+
+.hero p{
+margin-top:12px;
+color:#d1d5db;
+max-width:750px;
+margin-left:auto;
+margin-right:auto;
+line-height:1.5;
+}
+
+/* CATEGORIAS */
+.services{
+display:flex;
+justify-content:center;
+gap:25px;
+padding:60px 20px;
+flex-wrap:wrap;
+}
+
+.card{
+background:#fff;
+width:320px;
+border-radius:18px;
+padding:25px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.icon{
+width:60px;
+height:60px;
+background:#0f172a;
+color:#facc15;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 15px;
+font-size:22px;
+}
+
+.card h3{
+text-align:center;
+margin-bottom:10px;
+font-size:16px;
+font-weight:800;
+}
+
+.card ul{
+list-style:none;
+margin-top:10px;
+}
+
+.card ul li{
+margin-bottom:8px;
+font-size:14px;
+color:#374151;
+}
+
+/* FORM */
+.form-section{
+max-width:900px;
+margin:60px auto;
+background:#fff;
+padding:35px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.form-section h2{
+text-align:center;
+margin-bottom:25px;
+font-size:22px;
+font-weight:800;
+color:#0f172a;
+}
+
+.form-group{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:15px;
+}
+
+input,select,textarea{
+width:100%;
+padding:13px;
+border-radius:10px;
+border:1px solid #e5e7eb;
+outline:none;
+font-size:14px;
+transition:0.3s;
+}
+
+input:focus,select:focus,textarea:focus{
+border-color:#e60023;
+box-shadow:0 0 6px rgba(230,0,35,0.3);
+}
+
+textarea{
+height:130px;
+resize:none;
+}
+
+.btn{
+background:#e60023;
+color:#fff;
+padding:15px;
+width:100%;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+font-size:15px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#b8001a;
+transform:scale(1.03);
+}
+
+/* CATÁLOGO */
+.catalogo{
+text-align:center;
+margin:60px 0;
+}
+
+.catalogo-btn{
+display:inline-block;
+text-decoration:none;
+background:#0b1c3d;
+color:#fff;
+padding:15px 28px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:15px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.catalogo-btn:hover{
+background:#e60023;
+transform:scale(1.05);
+}
+
+.back-link{display:inline-block;margin-top:22px;color:#0b1c3d;font-weight:700;text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #e60023;outline-offset:2px}
+</style>
+</head>
+
+<body>
+<div class="hero-image">
+  <img src="capa-servicos.webp" alt="Capa Nossos Serviços" fetchpriority="high">
+</div>
+<!-- HERO -->
+<section class="hero">
+<h1>SOLICITA O TEU <span>SERVIÇO</span></h1>
+<p>
+Plataforma profissional de serviços em saúde, tecnologia e marketing.
+Escolhe a categoria, seleciona o serviço e descreve o teu pedido.
+</p>
+</section>
+
+<!-- CATEGORIAS -->
+<section class="services">
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
+<h3>Serviços de Saúde</h3>
+<ul>
+<li>Testes rápidos de HIV (Vírus da Imunodeficiência Humana)</li>
+<li>Testes rápidos de Sífilis</li>
+<li>Testes rápidos de Malária</li>
+<li>Cuidados domiciliários ao paciente</li>
+<li>Administração de medicamentos</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-code"></i></div>
+<h3>Serviços Digitais</h3>
+<ul>
+<li>Criação de sites profissionais e lojas virtuais</li>
+<li>Design gráfico profissional (logos, flyers, banners)</li>
+<li>Elaboração de currículos e documentos profissionais</li>
+<li>Registo e formalização de negócios e empresas</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
+<h3>Marketing & Multimídia</h3>
+<ul>
+<li>Gestão profissional de redes sociais</li>
+<li>Edição de vídeos publicitários</li>
+<li>Produção musical e áudio profissional</li>
+<li>Marketing digital estratégico</li>
+</ul>
+</div>
+
+</section>
+
+<!-- FORMULÁRIO -->
+<section class="form-section">
+
+<h2>FORMULÁRIO DE PEDIDO</h2>
+
+<div class="form-group">
+<input id="nome" type="text" placeholder="Nome completo" aria-label="Nome completo" autocomplete="name" required>
+<input id="numero" type="tel" inputmode="tel" placeholder="WhatsApp (ex.: 84 123 4567)" aria-label="Número de WhatsApp" autocomplete="tel" required>
+</div>
+
+<div class="form-group">
+<select id="categoria" aria-label="Categoria do serviço" required>
+<option value="" disabled selected>Categoria do serviço</option>
+<option>Serviços de Saúde</option>
+<option>Serviços Digitais</option>
+<option>Marketing & Multimídia</option>
+</select>
+
+<select id="servico" aria-label="Serviço desejado" required>
+<option value="" disabled selected>Serviço desejado</option>
+</select>
+</div>
+
+<div class="form-group">
+<input id="data" type="date" aria-label="Data pretendida">
+</div>
+
+<textarea id="descricao" aria-label="Descrição do pedido" placeholder="Descreva o seu pedido com detalhes..."></textarea>
+
+<button type="button" class="btn" onclick="enviarWhatsApp()">ENVIAR PEDIDO</button>
+
+</section>
+
+<!-- CATÁLOGO -->
+<div class="catalogo">
+
+<a class="catalogo-btn" href="https://wa.me/c/258842372438" target="_blank" rel="noopener noreferrer">VER CATÁLOGO DE SERVIÇOS</a><br>
+<a class="back-link" href="index.html">← Voltar ao Início</a>
+</div>
+
+<script>
+
+const categoria = document.getElementById("categoria");
+const servico = document.getElementById("servico");
+
+const servicos = {
+
+"Serviços de Saúde":[
+"Testes rápidos de HIV (Vírus da Imunodeficiência Humana)",
+"Testes rápidos de Sífilis (Treponema pallidum)",
+"Testes rápidos de Malária (Plasmodium spp.)",
+"Cuidados domiciliários ao paciente",
+"Administração de medicamentos"
+],
+
+"Serviços Digitais":[
+"Criação de sites profissionais e lojas virtuais responsivas",
+"Design gráfico profissional (logos, flyers, banners)",
+"Elaboração de currículos vitae e cartas de apresentação",
+"Registo e formalização de negócios e empresas"
+],
+
+"Marketing & Multimídia":[
+"Gestão profissional de redes sociais (Instagram, Facebook, TikTok)",
+"Edição de vídeos publicitários e institucionais",
+"Produção musical e áudio profissional",
+"Marketing digital estratégico para crescimento de negócios"
+]
+
+};
+
+categoria.addEventListener("change",()=>{
+servico.innerHTML='<option value="" disabled selected>Serviço desejado</option>';
+
+(servicos[categoria.value]||[]).forEach(s=>{
+let opt=document.createElement("option");
+opt.textContent=s;
+servico.appendChild(opt);
+});
+});
+
+function enviarWhatsApp(){
+const nome=document.getElementById("nome").value.trim();
+const numero=document.getElementById("numero").value.trim();
+const cat=categoria.value, serv=servico.value;
+const data=document.getElementById("data").value;
+const desc=document.getElementById("descricao").value.trim();
+if(!nome||!numero||!cat||!serv){alert("Por favor preencha nome, WhatsApp, categoria e serviço.");return;}
+if(numero.replace(/\D/g,"").length<8){alert("Indique um número de WhatsApp válido.");return;}
+const dataFmt=data?data.split("-").reverse().join("/"):"A combinar";
+const msg=`Olá, gostaria de solicitar um serviço:\n\nNome: ${nome}\nWhatsApp: ${numero}\nCategoria: ${cat}\nServiço: ${serv}\nData pretendida: ${dataFmt}\n\nDescrição: ${desc||"—"}`;
+window.open("https://wa.me/258842372438?text="+encodeURIComponent(msg),"_blank","noopener");
+}
+document.getElementById("data").min=new Date().toISOString().split("T")[0];
+
+</script>
+
+</body>
+</html>

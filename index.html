@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+
+<!-- FAVICON -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta name="msapplication-TileImage" content="favicon.png">
+
+<!-- SEO BÁSICO -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#011638">
+<meta name="google-site-verification" content="n0NJvTlaU8-xEjZMvhM6RS7Jows6g1OT9jUnUvJkibQ" />
+
+<!-- ✅ TÍTULO MELHORADO (SEO) -->
+<title>Sacaita Montgomery | Enfermeiro Generalista em Moçambique</title>
+
+<!-- ✅ DESCRIÇÃO MELHORADA (SEO) -->
+<meta name="description"
+content="Sacaita Montgomery é enfermeiro generalista em Moçambique. Conheça sua biografia, experiência profissional, portfólio e serviços na área da saúde.">
+
+<!-- ✅ CANONICAL (MUITO IMPORTANTE) -->
+<link rel="canonical" href="https://sacaitamanuelinacio.netlify.app/">
+
+<!-- ✅ OPEN GRAPH CORRIGIDO -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sacaita Montgomery | Enfermeiro Generalista">
+<meta property="og:description" content="Sacaita Montgomery é enfermeiro generalista em Moçambique. Conheça sua biografia, experiência profissional, portfólio e serviços na área da saúde.">
+<meta property="og:image" content="https://sacaitamanuelinacio.netlify.app/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:url" content="https://sacaitamanuelinacio.netlify.app/">
+
+<!-- ✅ TWITTER CARDS CORRIGIDO -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sacaita Montgomery | Enfermeiro Generalista">
+<meta name="twitter:description" content="Sacaita Montgomery é enfermeiro generalista em Moçambique. Conheça sua biografia, experiência profissional, portfólio e serviços na área da saúde.">
+<meta name="twitter:image" content="https://sacaitamanuelinacio.netlify.app/preview.jpg">
+
+<!-- ✅ SCHEMA MARKUP (structured data para Google) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sacaita Montgomery",
+  "alternateName": "Sacaita M.",
+  "url": "https://sacaitamanuelinacio.netlify.app/",
+  "image": "https://sacaitamanuelinacio.netlify.app/preview.jpg",
+  "jobTitle": "Enfermeiro Generalista",
+  "description": "Sacaita Montgomery é enfermeiro generalista em Moçambique. Especializado em cuidados de saúde, com experiência profissional documentada em portfólio.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Beira",
+    "addressCountry": "MZ"
+  },
+  "telephone": "+258842372438",
+  "email": "sacaitamo@gmail.com",
+  "sameAs": [
+    "https://facebook.com/sacaitamo",
+    "https://instagram.com/sacaitamo",
+    "https://linkedin.com/in/sacaitami",
+    "https://youtube.com/@sacaitamontgomery"
+  ],
+  "knowsAbout": [
+    "Enfermagem",
+    "Cuidados de Saúde",
+    "Saúde Pública",
+    "Moçambique"
+  ]
+}
+</script>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+/* ✅ WHATSAPP FLOAT (apenas uma vez) */
+.whatsapp-float{
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  width:55px;
+  height:55px;
+  background:#25D366;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:32px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+  z-index:99999;
+  text-decoration:none;
+  animation:pulse 2s infinite;
+  transition:0.3s ease;
+}
+
+.whatsapp-float:hover{
+  transform:scale(1.1);
+}
+
+@keyframes pulse{
+  0%{ box-shadow:0 0 0 0 rgba(37,211,102,0.6); }
+  70%{ box-shadow:0 0 0 15px rgba(37,211,102,0); }
+  100%{ box-shadow:0 0 0 0 rgba(37,211,102,0); }
+}
+
+/* PORTFÓLIO SLIDER */
+.portfolio-slider{
+  background:#111;
+  padding:50px 0;
+  overflow:hidden;
+}
+
+.portfolio-title{
+  color:#fff;
+  text-align:center;
+  font-size:26px;
+  margin-bottom:25px;
+}
+
+.slider{
+  width:100%;
+  overflow:hidden;
+  position:relative;
+}
+
+.track{
+  display:flex;
+  gap:15px;
+  width:max-content;
+  animation: scroll 18s linear infinite;
+  will-change: transform;
+}
+
+.track a{ display:block; }
+
+.track img{
+  width:160px;
+  height:110px;
+  object-fit:cover;
+  border-radius:10px;
+  cursor:pointer;
+  transition: transform 0.3s ease;
+}
+
+.track img:hover{ transform: scale(1.05); }
+
+/* LIGHTBOX */
+.lightbox-overlay{
+  position:fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:rgba(0,0,0,0.9);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+
+.lightbox-overlay img{
+  max-width:90%;
+  max-height:90%;
+}
+
+@keyframes scroll{
+  0%{ transform: translateX(0); }
+  100%{ transform: translateX(-50%); }
+}
+
+/* RESET GLOBAL */
+*{
+  margin:0; padding:0;
+  box-sizing:border-box;
+  font-family:'Montserrat', sans-serif;
+}
+
+html{ scroll-behavior:smooth; }
+
+body{
+  background:#efefef;
+  overflow-x:hidden;
+}
+
+/* WRAPPER */
+.wrapper{
+  width:100%;
+  max-width:1440px;
+  margin:auto;
+  background:#fff;
+  overflow:hidden;
+}
+
+/* NAVBAR */
+.navbar{
+  width:100%;
+  height:90px;
+  background:#011638;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 60px;
+  position:relative;
+  z-index:100;
+  box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.logo{ display:flex; align-items:center; gap:15px; color:#fff; }
+
+.logo-icon{
+  width:58px; height:58px;
+  border-radius:50%;
+  background:linear-gradient(180deg,#011638,#02245c);
+  display:flex; align-items:center; justify-content:center;
+  font-size:28px; color:#d50000;
+  border:2px solid rgba(255,255,255,0.12);
+  box-shadow:0 5px 15px rgba(0,0,0,0.25);
+}
+
+.logo h1{ font-size:22px; line-height:1.1; font-weight:800; text-transform:uppercase; }
+
+.menu{ display:flex; gap:40px; }
+
+.menu a{
+  color:#fff; text-decoration:none;
+  font-size:14px; font-weight:600;
+  text-transform:uppercase;
+  position:relative; transition:0.3s;
+}
+
+.menu a:hover{ color:#ff2d2d; }
+
+.menu a.active::after{
+  content:""; position:absolute;
+  left:0; bottom:-12px;
+  width:100%; height:3px;
+  background:#ff2020; border-radius:10px;
+}
+
+.contact-btn{
+  background:#c40000; color:#fff;
+  padding:16px 30px; border-radius:18px;
+  border:none; font-weight:700; cursor:pointer;
+  display:flex; align-items:center; gap:10px;
+  transition:0.3s; text-decoration:none;
+}
+
+.contact-btn:hover{ background:#ff0000; transform:translateY(-2px); }
+
+/* HERO */
+.hero{
+  width:100%; min-height:100vh;
+  background:#fff;
+  display:flex; position:relative; overflow:hidden;
+}
+
+.hero::before{
+  content:""; position:absolute;
+  left:0; top:0; width:30%; height:100%;
+  background:#011638;
+  clip-path:polygon(0 0,100% 0,72% 100%,0 100%);
+  z-index:1;
+}
+
+.hero::after{
+  content:""; position:absolute;
+  right:-120px; bottom:-120px;
+  width:250px; height:250px;
+  background:#011638;
+  transform:rotate(45deg);
+  border-top:12px solid #d50000;
+  z-index:1;
+}
+
+.diagonal{
+  position:absolute; left:-180px; top:-100px;
+  width:400px; height:1000px;
+  border:2px solid rgba(255,255,255,0.12);
+  transform:rotate(-35deg); z-index:2;
+}
+
+.left{
+  width:50%; display:flex;
+  align-items:flex-end; justify-content:center;
+  position:relative; z-index:5; padding-top:40px;
+}
+
+.left img{
+  width:85%; max-width:700px; object-fit:contain;
+  border-radius:30px;
+  border:4px solid rgba(255,255,255,0.25);
+  box-shadow:0 20px 50px rgba(0,0,0,0.35),0 0 0 6px rgba(255,255,255,0.08),0 0 25px rgba(255,0,80,0.25);
+  background:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(0,0,0,0.1));
+  padding:8px; transition:0.4s ease;
+}
+
+.left img:hover{
+  transform:scale(1.03);
+  box-shadow:0 25px 70px rgba(0,0,0,0.5),0 0 0 6px rgba(255,255,255,0.12),0 0 35px rgba(255,0,80,0.35);
+}
+
+.right{
+  width:50%; display:flex; flex-direction:column;
+  justify-content:center;
+  padding:60px 90px 60px 20px;
+  position:relative; z-index:5;
+}
+
+.name{
+  font-size:82px; font-weight:900;
+  line-height:0.92; text-transform:uppercase; color:#011638;
+}
+
+.black{ color:#000; }
+.blue{ color:#011638; }
+.red{ color:#c40000; }
+
+.separator{
+  width:430px; height:3px;
+  background:#cfcfcf; margin:35px 0 25px;
+  position:relative;
+}
+
+.separator::before{
+  content:""; position:absolute;
+  left:0; top:0; width:120px; height:100%;
+  background:#c40000;
+}
+
+.profession{
+  font-size:26px; letter-spacing:8px;
+  color:#011638; font-weight:700;
+  margin-bottom:35px; text-transform:uppercase;
+  line-height:1.5; position:relative;
+  display:inline-block; padding-left:20px;
+}
+
+.profession::before{
+  content:""; position:absolute;
+  left:0; top:10%; width:6px; height:80%;
+  background:#c40000; border-radius:10px;
+}
+
+.quote{
+  max-width:620px; font-size:20px;
+  line-height:1.9; color:#2d2d2d;
+  font-style:italic; position:relative;
+  background:#ffffff; padding:35px 40px;
+  border-left:6px solid #c40000;
+  border-radius:18px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  margin-top:10px;
+}
+
+.quote::before{
+  content:"❝"; position:absolute;
+  left:15px; top:-15px; font-size:80px;
+  color:#c40000; font-family:serif; opacity:0.15;
+}
+
+.quote::after{
+  content:"❞"; position:absolute;
+  right:20px; bottom:-50px; font-size:80px;
+  color:#c40000; font-family:serif; opacity:0.15;
+}
+
+/* SOCIALS */
+.socials{ display:flex; gap:18px; margin-top:35px; }
+
+.socials a{
+  width:42px; height:42px; background:#fff;
+  border-radius:50%; display:flex;
+  align-items:center; justify-content:center;
+  font-size:18px; box-shadow:0 5px 15px rgba(0,0,0,0.12);
+  transition:0.3s ease; text-decoration:none;
+}
+
+.socials a:hover{ transform:translateY(-5px); }
+.facebook{ color:#1877F2; }
+.instagram{ color:#E1306C; }
+.linkedin{ color:#0A66C2; }
+.youtube{ color:#FF0000; }
+
+/* CARDS */
+.cards{
+  width:100%; display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:25px; padding:35px 60px;
+  margin-top:-50px; position:relative;
+  z-index:10; background:#f7f7f7;
+}
+
+.card{
+  background:#fff; border-radius:20px;
+  padding:40px 25px; text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:0.4s;
+}
+
+.card:hover{ transform:translateY(-10px); }
+
+.card-icon{
+  width:92px; height:92px; border-radius:50%;
+  margin:0 auto 25px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:34px;
+  background:radial-gradient(circle,#1a1a1a,#0d0d0d);
+  color:#FFD700;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4),0 0 18px rgba(255,215,0,0.25);
+  transition:0.35s ease;
+}
+
+.card-icon:hover{
+  transform:scale(1.12);
+  box-shadow:0 15px 35px rgba(0,0,0,0.5),0 0 30px rgba(255,215,0,0.5);
+}
+
+.card h3{
+  font-size:22px; color:#011638;
+  margin-bottom:15px; text-transform:uppercase;
+  line-height:1.3; min-height:60px;
+  display:flex; align-items:center;
+  justify-content:center; text-align:center;
+}
+
+.card p{ font-size:15px; line-height:1.8; color:#555; min-height:60px; }
+
+.card-line{
+  width:90px; height:3px; background:#d5d5d5;
+  margin:25px auto 0; position:relative;
+}
+
+.card-line::before{
+  content:""; position:absolute;
+  left:0; top:0; width:35px; height:100%;
+  background:#c40000;
+}
+
+/* FOOTER */
+footer{
+  width:100%; background:#011638;
+  padding:30px 60px; color:#fff;
+  position:relative; overflow:hidden;
+}
+
+footer::after{
+  content:""; position:absolute;
+  right:-120px; bottom:-120px;
+  width:250px; height:250px;
+  background:#c40000; transform:rotate(45deg);
+}
+
+.footer-content{
+  display:flex; justify-content:space-between;
+  align-items:center; position:relative;
+  z-index:2; gap:30px; flex-wrap:wrap;
+}
+
+.footer-logo{ display:flex; align-items:center; gap:15px; }
+
+.footer-logo h4{ font-size:22px; font-weight:800; text-transform:uppercase; }
+
+.footer-logo span{ color:#ff2d2d; }
+
+.footer-info{ display:flex; gap:35px; flex-wrap:wrap; }
+
+.footer-item{ display:flex; align-items:center; gap:10px; font-size:15px; }
+
+.copy{ font-size:14px; text-align:right; }
+
+/* RESPONSIVO */
+@media(max-width:1200px){
+  .hero{ flex-direction:column; padding-top:40px; }
+  .left,.right{ width:100%; }
+  .left{ align-items:center; padding:40px 20px 0; }
+  .left img{ width:75%; }
+  .right{ padding:50px; text-align:center; align-items:center; }
+  .separator{ margin:auto; margin-top:30px; margin-bottom:25px; }
+  .cards{ grid-template-columns:repeat(2,1fr); }
+  .name{ font-size:58px; }
+  .quote::before,.quote::after{ display:none; }
+}
+
+@media(max-width:768px){
+  .navbar{ height:auto; padding:25px 20px; flex-direction:column; gap:25px; }
+  .logo{ flex-direction:column; text-align:center; }
+  .menu{ flex-direction:column; align-items:center; justify-content:center; gap:14px; width:100%; margin-top:10px; }
+  .menu a{ font-size:15px; width:100%; text-align:center; padding:8px 0; }
+  .contact-btn{ width:100%; justify-content:center; }
+  .hero::before{ width:100%; height:300px; clip-path:none; }
+  .hero{ padding-top:0; }
+  .left{ padding-top:80px; }
+  .left img{ width:90%; }
+  .right{ padding:40px 25px 60px; }
+  .name{ font-size:38px; line-height:1.1; text-align:center; }
+  .separator{ width:100%; }
+  .profession{ font-size:16px; letter-spacing:4px; text-align:center; }
+  .quote{ font-size:16px; text-align:center; line-height:1.8; }
+  .socials{ display:flex; justify-content:center; align-items:center; gap:18px; flex-wrap:nowrap; margin-top:40px; }
+  .socials a{ width:60px; height:60px; font-size:24px; }
+  .cards{ grid-template-columns:1fr; padding:30px 20px; margin-top:0; }
+  .card{ padding:35px 20px; }
+  footer{ padding:35px 20px; }
+  .footer-content{ flex-direction:column; text-align:center; }
+  .footer-logo{ flex-direction:column; }
+  .footer-info{ justify-content:center; }
+  .copy{ text-align:center; }
+  .diagonal{ display:none; }
+}
+
+
+.left img{height:auto}
+.cards a{display:block;text-decoration:none;color:inherit}
+.cards .card{height:100%}
+.track:hover{animation-play-state:paused}
+a:focus-visible,button:focus-visible{outline:3px solid #ff2d2d;outline-offset:3px}
+.lb-close{position:absolute;top:18px;right:24px;background:none;border:0;color:#fff;font-size:34px;cursor:pointer}
+@media(min-width:769px) and (max-width:1200px){.cards a:last-child{grid-column:1/-1}}
+@media(prefers-reduced-motion:reduce){.track,.whatsapp-float{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <div class="logo-icon">
+      <i class="fa-solid fa-user-nurse"></i>
+    </div>
+  </div>
+
+  <nav class="menu">
+    <a href="index.html" class="active" aria-current="page">Home</a>
+    <a href="formacao.html">Formação</a>
+    <a href="certificacoes.html">Certificações</a>
+    <a href="biografia.html">Biografia</a>
+    <a href="portfolio.html">Portfólio</a>
+    <a href="servicos.html">Serviços</a>
+  </nav>
+
+  <a href="https://wa.me/258842372438?text=Ol%C3%A1%20Dr.%20Sacaita%20MONTGOMERY%20Vi%20o%20seu%20site%20e%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20seus%20servi%C3%A7os."
+     target="_blank" rel="noopener noreferrer" class="contact-btn">
+    Contactar
+  </a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="diagonal"></div>
+
+  <div class="left">
+    <img src="perfil.webp" alt="Sacaita Montgomery, enfermeiro generalista" fetchpriority="high" decoding="async">
+  </div>
+
+  <div class="right">
+    <h1 class="name">
+      <span class="blue">SACAITA</span>
+      <span class="red">MONTGOMERY</span>
+    </h1>
+
+    <div class="separator"></div>
+
+    <div class="profession">
+      ENFERMEIRO GENERALISTA
+    </div>
+
+    <p class="quote">
+      A luz que buscas brilhante e serena, está nas trevas que a tua alma te condena. Não há salvação, não há libertação sem abraçar o abismo que mora em teu coração.
+    </p>
+
+    <div class="socials">
+      <a href="https://facebook.com/sacaitamo" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://instagram.com/sacaitamo" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com/in/sacaitami" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://youtube.com/@sacaitamontgomery" target="_blank" rel="noopener noreferrer" class="youtube" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section class="cards">
+
+  <a href="formacao.html" style="text-decoration:none;color:inherit;">
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+      <h3>FORMAÇÃO ACADÉMICA</h3>
+      <p>Conheça minha formação académica e trajectória profissional.</p>
+      <div class="card-line"></div>
+    </div>
+  </a>
+
+  <a href="certificacoes.html" style="text-decoration:none;color:inherit;">
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-award"></i></div>
+      <h3>CERTIFICAÇÕES</h3>
+      <p>Veja certificações, cursos e especializações realizadas.</p>
+      <div class="card-line"></div>
+    </div>
+  </a>
+
+  <a href="biografia.html" style="text-decoration:none;color:inherit;">
+    <div class="card">
+      <div class="card-icon"><i class="fa-regular fa-user"></i></div>
+      <h3>BIOGRAFIA</h3>
+      <p>Saiba mais sobre minha história, experiência e objectivos.</p>
+      <div class="card-line"></div>
+    </div>
+  </a>
+
+  <a href="portfolio.html" style="text-decoration:none;color:inherit;">
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-images"></i></div>
+      <h3>PORTFÓLIO</h3>
+      <p>Veja todos os meus projetos e trabalhos realizados.</p>
+      <div class="card-line"></div>
+    </div>
+  </a>
+
+  <a href="servicos.html" style="text-decoration:none;color:inherit;">
+    <div class="card">
+      <div class="card-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+      <h3>SERVIÇOS</h3>
+      <p>Solicite serviços de saúde, tecnologia e marketing.</p>
+      <div class="card-line"></div>
+    </div>
+  </a>
+
+</section>
+
+<!-- PORTFÓLIO SLIDER -->
+<section class="portfolio-slider">
+  <h2 class="portfolio-title">MEU PORTFÓLIO</h2>
+  <div class="slider">
+    <div class="track">
+      <a class="lightbox" href="portfolio-1.webp"><img src="portfolio-1-thumb.webp" alt="Projeto de portfólio 1" loading="lazy" decoding="async"></a>
+      <a class="lightbox" href="portfolio-2.webp"><img src="portfolio-2-thumb.webp" alt="Projeto de portfólio 2" loading="lazy" decoding="async"></a>
+      <a class="lightbox" href="portfolio-3.webp"><img src="portfolio-3-thumb.webp" alt="Projeto de portfólio 3" loading="lazy" decoding="async"></a>
+      <a class="lightbox" href="portfolio-4.webp"><img src="portfolio-4-thumb.webp" alt="Projeto de portfólio 4" loading="lazy" decoding="async"></a>
+      <a class="lightbox" href="portfolio-5.webp"><img src="portfolio-5-thumb.webp" alt="Projeto de portfólio 5" loading="lazy" decoding="async"></a>
+      <a class="lightbox" href="portfolio-6.webp"><img src="portfolio-6-thumb.webp" alt="Projeto de portfólio 6" loading="lazy" decoding="async"></a>
+      <a class="lightbox" href="portfolio-1.webp" aria-hidden="true" tabindex="-1"><img src="portfolio-1-thumb.webp" alt="Projeto de portfólio 1" loading="lazy" decoding="async"></a>
+      <a class="lightbox" href="portfolio-2.webp" aria-hidden="true" tabindex="-1"><img src="portfolio-2-thumb.webp" alt="Projeto de portfólio 2" loading="lazy" decoding="async"></a>
+      <a class="lightbox" href="portfolio-3.webp" aria-hidden="true" tabindex="-1"><img src="portfolio-3-thumb.webp" alt="Projeto de portfólio 3" loading="lazy" decoding="async"></a>
+      <a class="lightbox" href="portfolio-4.webp" aria-hidden="true" tabindex="-1"><img src="portfolio-4-thumb.webp" alt="Projeto de portfólio 4" loading="lazy" decoding="async"></a>
+      <a class="lightbox" href="portfolio-5.webp" aria-hidden="true" tabindex="-1"><img src="portfolio-5-thumb.webp" alt="Projeto de portfólio 5" loading="lazy" decoding="async"></a>
+      <a class="lightbox" href="portfolio-6.webp" aria-hidden="true" tabindex="-1"><img src="portfolio-6-thumb.webp" alt="Projeto de portfólio 6" loading="lazy" decoding="async"></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <div class="logo-icon">
+        <i class="fa-solid fa-staff-snake"></i>
+      </div>
+      <div>
+        <h4>SACAITA MONTGOMERY</h4>
+        <span>ENFERMEIRO GENERALISTA</span>
+      </div>
+    </div>
+
+    <div class="footer-info">
+      <div class="footer-item">
+        <i class="fa-solid fa-phone"></i> +258 84 2372 438
+      </div>
+      <div class="footer-item">
+        <i class="fa-solid fa-envelope"></i> sacaitamo@gmail.com
+      </div>
+      <div class="footer-item">
+        <i class="fa-solid fa-location-dot"></i> Beira, Moçambique
+      </div>
+    </div>
+
+    <div class="copy">
+      © 2026 - Sacaita Montgomery.<br>
+      Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<!-- ✅ BOTÃO WHATSAPP (apenas um) -->
+<a href="https://wa.me/258842372438?text=Ol%C3%A1%20Dr.%20Sacaita%20MONTGOMERY%20Vi%20o%20seu%20site%20e%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20seus%20servi%C3%A7os."
+   target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Falar no WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ✅ SCRIPT LIGHTBOX (apenas um) -->
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  var overlay=document.createElement("div");
+  overlay.setAttribute("role","dialog");overlay.setAttribute("aria-modal","true");overlay.setAttribute("aria-label","Visualizador de imagem");
+  overlay.style.cssText="position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:99999";
+  var img=document.createElement("img");img.alt="";img.style.cssText="max-width:92%;max-height:92%;border-radius:10px";
+  var btn=document.createElement("button");btn.type="button";btn.className="lb-close";btn.setAttribute("aria-label","Fechar");btn.textContent="\u2715";
+  overlay.append(img,btn);document.body.appendChild(overlay);
+  var last=null;
+  function openLb(a){last=a;img.src=a.getAttribute("href");img.alt=a.querySelector("img").alt;overlay.style.display="flex";document.body.style.overflow="hidden";btn.focus();}
+  function closeLb(){overlay.style.display="none";img.removeAttribute("src");document.body.style.overflow="";if(last)last.focus();}
+  document.querySelectorAll(".lightbox").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();openLb(a);});});
+  overlay.addEventListener("click",function(e){if(e.target!==img)closeLb();});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&overlay.style.display==="flex")closeLb();});
+});
+</script>
+
+</body>
+</html>

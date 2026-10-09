@@ -1,0 +1,15 @@
+# ==========================================
+# robots.txt — Sacaita Montgomery
+# https://sacaitamanuelinacio.netlify.app/
+# ==========================================
+
+# Permitir todos os motores de busca
+User-agent: *
+Allow: /
+
+# Bloquear acesso a ficheiros desnecessários (se existirem)
+Disallow: /404.html
+Disallow: /*.json$
+
+# Localização do Sitemap
+Sitemap: https://sacaitamanuelinacio.netlify.app/sitemap.xml
